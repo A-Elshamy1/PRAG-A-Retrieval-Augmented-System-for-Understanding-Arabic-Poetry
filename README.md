@@ -93,5 +93,3 @@ A premium, dark-themed UI featuring glassmorphism, Tajawal typography, and model
 ## 🛠️ Testing
 
 Run `python tests/test_pipeline.py` to verify every layer of the system.
-
-# Thanks
