@@ -23,8 +23,6 @@ pip install -r requirements.txt
 
 cp .env.example .env
 
-```
-
 ### 2. Run the Pipeline
 
 1. **Pull local model**: `ollama pull gpt-oss:20b-cloud`
@@ -96,4 +94,3 @@ A premium, dark-themed UI featuring glassmorphism, Tajawal typography, and model
 ## 🛠️ Testing
 
 Run `python tests/test_pipeline.py` to verify every layer of the system.
-```
