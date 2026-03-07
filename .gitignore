@@ -1,7 +1,4 @@
 .env
-data/*.json
-index/*.index
-index/*.json
 __pycache__/
 *.pyc
 .DS_Store
