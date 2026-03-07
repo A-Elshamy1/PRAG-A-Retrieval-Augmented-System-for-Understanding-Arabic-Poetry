@@ -9,17 +9,20 @@ A production-ready local Arabic Poetry RAG system that scrapes data from `aldiwa
 ### 1. Setup
 
 ```bash
-# Clone and enter
-git clone https://github.com/your-username/arabic-poetry-rag.git
-cd arabic-poetry-rag
+git clone https://github.com/A-Elshamy1/PRAG-A-Retrieval-Augmented-System-for-Understanding-Arabic-Poetry.git arabic-poetry-rag
+cd PRAG-A-Retrieval-Augmented-System-for-Understanding-Arabic-Poetry
+```
 
 # Environment
+
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 
 # Configure (Add your JAMBA_API_KEY)
+
 cp .env.example .env
+
 ```
 
 ### 2. Run the Pipeline
@@ -93,3 +96,4 @@ A premium, dark-themed UI featuring glassmorphism, Tajawal typography, and model
 ## 🛠️ Testing
 
 Run `python tests/test_pipeline.py` to verify every layer of the system.
+```
