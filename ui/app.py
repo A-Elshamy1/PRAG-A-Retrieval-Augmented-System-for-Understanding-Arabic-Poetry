@@ -10,6 +10,7 @@ FASTAPI_HOST  = os.getenv("FASTAPI_HOST",  "0.0.0.0")
 FASTAPI_PORT  = int(os.getenv("FASTAPI_PORT",  "8000"))
 GRADIO_PORT   = int(os.getenv("GRADIO_PORT",   "7860"))
 TOP_K_DEFAULT = int(os.getenv("TOP_K_DEFAULT", "5"))
+APP_VER       = os.getenv("APP_VER", "0.1")
 
 API_BASE = f"http://127.0.0.1:{FASTAPI_PORT}"
 
@@ -96,6 +97,22 @@ body, .gradio-container {
     margin-bottom: 10px;
     display: block;
     animation: fade-in-down 0.8s ease both;
+}
+
+.prag-version {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0em;
+    color: #ffffff;
+    background: rgba(46, 204, 113, 0.2);
+    border: 1px solid rgba(46, 204, 113, 0.4);
+    padding: 2px 10px;
+    border-radius: 20px;
+    vertical-align: middle;
+    margin-left: 12px;
+    display: inline-block;
+    opacity: 1;
 }
 
 .prag-tagline {
@@ -394,9 +411,9 @@ def build_ui() -> gr.Blocks:
         theme=gr.themes.Base(primary_hue="orange", neutral_hue="slate"),
     ) as demo:
 
-        gr.HTML("""
+        gr.HTML(f"""
         <div class="prag-hero">
-            <span class="prag-wordmark">PRAG</span>
+            <span class="prag-wordmark">PRAG <span class="prag-version">v{APP_VER}</span></span>
             <p class="prag-tagline">
                 <span>P</span>oetry &nbsp;·&nbsp;
                 <span>R</span>etrieval &nbsp;·&nbsp;
