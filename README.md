@@ -16,6 +16,7 @@ cd PRAG-A-Retrieval-Augmented-System-for-Understanding-Arabic-Poetry
 # Environment
 
 python -m venv venv
+
 venv\Scripts\activate
 pip install -r requirements.txt
 
